@@ -1,0 +1,37 @@
+{
+  "name": "ericpoe/phpproject",
+  "description": "Base dockerized PHP project template",
+  "minimum-stability": "RC",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Eric Poe",
+      "email": "eric.poe@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0"
+  },
+  "require-dev": {
+
+  },
+  "config": {
+    "platform": {
+      "php": "8.0"
+    },
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "App\\Tests\\": "tests/"
+      }
+    }
+  }
+}
