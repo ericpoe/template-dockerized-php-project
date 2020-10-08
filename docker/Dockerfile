@@ -1,5 +1,5 @@
 # Start with the official Composer image and name it
-FROM composer AS composer
+FROM composer:2 AS composer
 
 # Continue with the official PHP image
 FROM php:rc-fpm
