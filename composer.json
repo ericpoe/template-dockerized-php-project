@@ -13,7 +13,7 @@
     "php": "^8.0"
   },
   "require-dev": {
-
+    "phpstan/phpstan": "^0.12.48"
   },
   "config": {
     "platform": {
@@ -27,11 +27,15 @@
   "autoload": {
     "psr-4": {
       "App\\": "src/"
-    },
-    "autoload-dev": {
-      "psr-4": {
-        "App\\Tests\\": "tests/"
-      }
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "App\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "analyze": "phpstan analyse --memory-limit=-1",
+    "analyze-baseline": "@analyze --generate-baseline"
   }
 }
