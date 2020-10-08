@@ -1,1 +1,5 @@
+# files
+.phpcs-cache
+
+# directories
 vendor

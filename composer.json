@@ -13,7 +13,8 @@
     "php": "^8.0"
   },
   "require-dev": {
-    "phpstan/phpstan": "^0.12.48"
+    "phpstan/phpstan": "^0.12.48",
+    "squizlabs/php_codesniffer": "^3.5"
   },
   "config": {
     "platform": {
@@ -36,6 +37,8 @@
   },
   "scripts": {
     "analyze": "phpstan analyse --memory-limit=-1",
-    "analyze-baseline": "@analyze --generate-baseline"
+    "analyze-baseline": "@analyze --generate-baseline",
+    "lint": "phpcs",
+    "lint-fix": "phpcbf"
   }
 }
