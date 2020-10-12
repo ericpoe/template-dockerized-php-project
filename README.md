@@ -37,6 +37,6 @@ If using [Symfony](https://symfony.com/), remove PHPUnit first because Symfony u
   * PHPStan rebuild baseline: `docker/composer analyse-baseline`
   * Code Sniffer lint: `docker/composer lint`
   * Code Sniffer code-fix: `docker/composer lint-fix`
-* Anything else that would normally be run using PHP will probably be `docker/app <command`
+* Anything else that would normally be run using PHP will probably be `docker/app <command>`
   * Example: `docker/app php --version`
   * PHPUnit: `docker/app vendor/bin/phpunit`
