@@ -28,7 +28,7 @@ If using [Symfony](https://symfony.com/), remove PHPUnit first because Symfony u
 #### Docker
 
 * `docker-compose up --build`
-* If you want to use xdebug, change the xdebug line in `docker-compose.yml` from `false` to `true` and run `docker-compose up --build` again.
+* **COMING SOON** If you want to use xdebug, change the xdebug line in `docker-compose.yml` from `false` to `true` and run `docker-compose up --build` again.
 
 #### PHP
 
